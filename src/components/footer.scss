@@ -1,0 +1,9 @@
+@import "../components/reuse_mixins.scss";
+
+footer {
+    @include flex-cent();
+    flex-direction: column;
+    color: #aaaaaa;
+    height: 100px;
+    background-color: #111;
+}
