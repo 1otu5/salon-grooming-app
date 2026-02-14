@@ -1,5 +1,4 @@
-@import "../components/reuse_mixins.scss";
-
+@use "../ReuseMixins/reuse_mixins" as *;
 
 header {
     background-color: rgba(26, 26, 26);
@@ -8,7 +7,7 @@ header {
     height: 60px;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 1;
     scroll-margin-top: 1000px;
 
     section {

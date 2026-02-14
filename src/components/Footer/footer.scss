@@ -1,4 +1,5 @@
-@import "../components/reuse_mixins.scss";
+@use "../ReuseMixins/reuse_mixins" as *;
+
 
 footer {
     @include flex-cent();

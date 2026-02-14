@@ -1,6 +1,6 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
-import styles from "../components/font.module.scss";
+import Header from "../components/Header/header";
+import Footer from "../components/Footer/footer";
+import styles from "../components/Font/font.module.scss";
 import "./mainpg.scss"
 
 function Main() {

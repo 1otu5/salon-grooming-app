@@ -1,5 +1,6 @@
 import "./header.scss"
-import styles from "./font.module.scss";
+import styles from "../Font/font.module.scss";
+import Translate from "../../translations/translation";
 
 function Header() {
     return (

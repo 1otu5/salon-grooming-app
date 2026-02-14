@@ -1,6 +1,4 @@
-@import "../components/reuse_mixins.scss";
-
-
+@use "../components/ReuseMixins/reuse_mixins" as *;
 
 body {
     margin: 0;
@@ -81,7 +79,7 @@ body {
 
 
 .button {
-    @include cta-button;
+    @include cta-button();
 
     a {
         color: black;
