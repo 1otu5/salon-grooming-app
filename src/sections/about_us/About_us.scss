@@ -1,0 +1,40 @@
+@use "../../components/ReuseMixins/reuse_mixins" as *;
+
+.maintxt {
+    background-color: rgb(29, 29, 29);
+    @include flex-cent();
+    height: 800px;
+
+    img {
+        height: 70vh;
+        border-radius: 10px;
+        margin-right: 40px;
+    }
+}
+
+.about_us {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        color: rgb(255, 255, 255);
+    }
+
+    p {
+        line-height: 5px;
+        color: #aaaaaa;
+    }
+
+}
+
+
+.button {
+    @include cta-button($width: 30%, $height: 50px);
+
+    a {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}

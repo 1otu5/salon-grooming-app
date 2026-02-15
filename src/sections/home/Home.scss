@@ -1,0 +1,51 @@
+@use "../..//components/ReuseMixins/reuse_mixins" as *;
+
+.mainpic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
+.bookses {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    flex-direction: column;
+    @include flex-cent();
+
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    a {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+
+.main_button {
+    @include cta-button($width: 40%, $height: 50px);
+
+    a {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}

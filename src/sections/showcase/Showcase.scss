@@ -1,0 +1,56 @@
+@use "../../components/ReuseMixins/reuse_mixins.scss" as *;
+
+.showcase {
+    @include flex-cent();
+    flex-direction: column;
+    background-color: #1a1a1a;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+
+    div {
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+        background-color: rgb(201, 48, 175);
+    }
+
+    div::after {
+        position: absolute;
+        content: "View";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        font-weight: bolder;
+        opacity: 0;
+        color: white;
+
+    }
+
+    div:hover::after {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    div:hover img {
+        transform: scale(1.1, 1.1);
+        opacity: 0.6;
+        transition: transform 0.3s ease;
+    }
+
+    div>img {
+        transition: transform 0.3s ease;
+    }
+}
+
+.images {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}

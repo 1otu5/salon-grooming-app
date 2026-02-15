@@ -1,0 +1,37 @@
+@use "../..//components/ReuseMixins/reuse_mixins" as *;
+
+.services {
+    background-color: #2a2a2a;
+    @include flex-cent();
+
+    h2 {
+        margin: 0;
+        color: white;
+    }
+}
+
+.information_services {
+    @include flex-cent();
+    flex-direction: column;
+    height: 700px;
+}
+
+.holder_inf {
+    display: flex;
+}
+
+.info {
+    background-color: #1a1a1a;
+    margin: 20px;
+    border-radius: 5px;
+    width: 300px;
+    height: 220px;
+    flex-direction: column;
+    line-height: 30px;
+    @include flex-cent();
+
+    p {
+        margin: 0;
+        color: #aaaaaa;
+    }
+}

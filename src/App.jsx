@@ -1,4 +1,5 @@
 import Main from "./pages/mainpg"
+import "./App.scss"
 
 
 
