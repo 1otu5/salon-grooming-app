@@ -5,9 +5,9 @@ import Services from "../sections/services/Services"
 import Showcase from "../sections/showcase/Showcase";
 import Contact from "../sections/contact/Contact"
 import Footer from "../components/Footer/footer";
-import "./mainpg.scss"
 
 function Main() {
+
     return (
 
         <>
@@ -15,6 +15,7 @@ function Main() {
             <Header></Header>
 
             <main>
+
                 <Home></Home>
                 <About_us></About_us>
                 <Services></Services>

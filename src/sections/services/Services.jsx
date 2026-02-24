@@ -1,65 +1,69 @@
+import { useTranslation } from "react-i18next"
 import styles from "../../components/Font/font.module.scss";
 import "./Services.scss"
 
 function Services() {
+    const { t } = useTranslation()
+
     return (
         <section className="services" id="Services">
             <div className="information_services">
-                <h2>Our Signature Services</h2>
+                <h2>{t("services.title")}</h2>
+
                 <div className="holder_inf">
                     <div className="info">
-                        <h3 className={styles.palevioleted}>Editorial & Fashion</h3>
-                        <p>Makeup for photoshoots, runway </p>
-                        <p>shows, and campaigns. Creative,</p>
-                        <p>boundary-pushing looks designed</p>
-                        <p>to make an impact.</p>
+                        <h3 className={styles.palevioleted}>{t("services.editorial.title")}</h3>
+                        <p>{t("services.editorial.p1")}</p>
+                        <p>{t("services.editorial.p2")}</p>
+                        <p>{t("services.editorial.p3")}</p>
+                        <p>{t("services.editorial.p4")}</p>
                     </div>
 
                     <div className="info">
-                        <h3 className={styles.palevioleted}>Bridal Glamour</h3>
-                        <p>Luxurious, long-lasting bridal </p>
-                        <p>makeup tailored to your</p>
-                        <p>style, ensuring you look flawless on</p>
-                        <p>your special day.</p>
+                        <h3 className={styles.palevioleted}>{t("services.bridal.title")}</h3>
+                        <p>{t("services.bridal.p1")}</p>
+                        <p>{t("services.bridal.p2")}</p>
+                        <p>{t("services.bridal.p3")}</p>
+                        <p>{t("services.bridal.p4")}</p>
                     </div>
 
                     <div className="info">
-                        <h3 className={styles.palevioleted}>Special Event Makeup</h3>
-                        <p>Get ready for galas, red carpets, or </p>
-                        <p>any major event with a</p>
-                        <p>sophisticated and glamorous</p>
-                        <p>makeup application.</p>
+                        <h3 className={styles.palevioleted}>{t("services.event.title")}</h3>
+                        <p>{t("services.event.p1")}</p>
+                        <p>{t("services.event.p2")}</p>
+                        <p>{t("services.event.p3")}</p>
+                        <p>{t("services.event.p4")}</p>
                     </div>
                 </div>
 
                 <div className="holder_inf">
                     <div className="info">
-                        <h3 className={styles.palevioleted}>Avant-Garde Artistry</h3>
-                        <p>For those seeking truly unique and </p>
-                        <p>artistic makeup transformations.</p>
-                        <p>Perfect for creative projects or</p>
-                        <p>themed events.</p>
+                        <h3 className={styles.palevioleted}>{t("services.avant.title")}</h3>
+                        <p>{t("services.avant.p1")}</p>
+                        <p>{t("services.avant.p2")}</p>
+                        <p>{t("services.avant.p3")}</p>
+                        <p>{t("services.avant.p4")}</p>
                     </div>
 
                     <div className="info">
-                        <h3 className={styles.palevioleted}>Makeup Lessons</h3>
-                        <p>Learn professional techniques and </p>
-                        <p>tips personalized for you,</p>
-                        <p>everyday enhancement to full glam</p>
-                        <p>looks.</p>
+                        <h3 className={styles.palevioleted}>{t("services.lessons.title")}</h3>
+                        <p>{t("services.lessons.p1")}</p>
+                        <p>{t("services.lessons.p2")}</p>
+                        <p>{t("services.lessons.p3")}</p>
+                        <p>{t("services.lessons.p4")}</p>
                     </div>
 
                     <div className="info">
-                        <h3 className={styles.palevioleted}>Commercial & Film</h3>
-                        <p>Professional makeup services </p>
-                        <p>tailored for commercial shoots, film</p>
-                        <p>productions, and television</p>
-                        <p>appearances.</p>
+                        <h3 className={styles.palevioleted}>{t("services.commercial.title")}</h3>
+                        <p>{t("services.commercial.p1")}</p>
+                        <p>{t("services.commercial.p2")}</p>
+                        <p>{t("services.commercial.p3")}</p>
+                        <p>{t("services.commercial.p4")}</p>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default Services

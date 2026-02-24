@@ -1,6 +1,5 @@
-import "./Home.scss"
-
 import { useTranslation } from "react-i18next"
+import "./Home.scss"
 
 function Home() {
     const { t } = useTranslation()
@@ -9,12 +8,12 @@ function Home() {
             <img className="mainpic" src="/images/makeup-artist-working.jpg" alt="" />
 
             <div className="text">
-                <h1> Elevate Your <span>Look</span></h1>
+                <h1>{t("home.heading")} <span>{t("home.highlight")}</span></h1>
 
-                <p>High-Fashion Makeup Artistry for the Bold and Glamorous</p>
+                <p>{t("home.subheading")}</p>
 
                 <div className="main_button">
-                    <a href="#">Book Your Session</a>
+                    <a href="#">{t("home.book_button")}</a>
                 </div>
             </div>
         </div>

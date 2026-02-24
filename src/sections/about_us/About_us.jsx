@@ -1,28 +1,31 @@
+import { useTranslation } from "react-i18next"
 import "./About_us.scss"
 
+
 function About_us() {
+    const { t } = useTranslation();
 
     return (
         <div id="about_us" className="maintxt">
-            <img src="/images/makeup-artist-working.jpg" alt="" />
+            <img src="/images/makeup-artist-working.jpg" alt="Makeup artist working" />
 
             <section className="about_us">
-                <h2>About GlamNeon Studio</h2>
+                <h2>{t("about.title")}</h2>
 
-                <p>Welcome to GlamNeon, where makeup transcends convention.</p>
-                <p>We specialize in creating stunning, high-fashion looks that empower and inspire.</p>
-                <p>Our lead artist blends cutting-edge techniques with a keen eye for editorial style.</p>
-
-                <p>Whether it's for a photoshoot, a runway, a special event, or your wedding day.</p>
-                <p>We bring a touch of neon-infused glamour and unparalleled artistry to every face.</p>
-                <p>We believe makeup is a form of self-expression, and we're here to help you make your boldest statement.</p>
+                <p>{t("about.p1")}</p>
+                <p>{t("about.p2")}</p>
+                <p>{t("about.p3")}</p>
+                <p>{t("about.p4")}</p>
+                <p>{t("about.p5")}</p>
+                <p>{t("about.p6")}</p>
 
                 <div className="button">
-                    <a href="#">View Our Work</a>
+                    <a href="#">{t("about.view_work")}</a>
                 </div>
             </section>
         </div>
     );
 }
+
 
 export default About_us;

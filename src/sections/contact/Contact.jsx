@@ -1,31 +1,34 @@
+import { useTranslation } from "react-i18next";
 import styles from "../../components/Font/font.module.scss";
 import "./Contact.scss"
 
+
 function Contact() {
+    const { t } = useTranslation()
     return (
         <section id="Contact" className="contact">
-            <h2 className={styles.h2}>Get In Touch</h2>
-            <p>Ready for your transformation or have questions? Reach out!</p>
+            <h2 className={styles.h2}>{t("contact.title")}</h2>
+            <p>{t("contact.subtitle")}</p>
 
             <form className="for">
-                <label>Name</label>
+                <label>{t("contact.name")}</label>
                 <input type="text" />
 
-                <label>Email</label>
+                <label>{t("contact.email")}</label>
                 <input type="text" />
 
-                <label>Service Interested In (Optional)</label>
+                <label>{t("contact.service")}</label>
                 <input type="text" />
 
-                <label>Message</label>
+                <label>{t("contact.message")}</label>
                 <textarea />
 
-                <p>(Form submission is disabled in this demo)</p>
+                <p>{t("contact.notice")}</p>
             </form>
 
-            <p>Email: contact@glamneon.example.com</p>
-            <p>Phone: +1 (555) 123-4567 (By Appointment Only)</p>
-            <p>Studio Location: 123 Glamour Ave, Fashion City, FC 90210</p>
+            <p>{t("contact.email_info")}</p>
+            <p>{t("contact.phone_info")}</p>
+            <p>{t("contact.location_info")}</p>
         </section>
     )
 }

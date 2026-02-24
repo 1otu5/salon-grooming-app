@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next"
 import "./Showcase.scss"
 
 function Showcase() {
+    const { t } = useTranslation()
     return (
         <section id="showcase" className="showcase">
-            <h2>Portfolio Showcase</h2>
+            <h2>{t("portfolio.title")}</h2>
 
             <div>
                 <div className="rows">

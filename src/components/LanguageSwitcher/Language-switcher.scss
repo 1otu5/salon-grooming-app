@@ -1,0 +1,47 @@
+.switch-languge {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(26, 26, 26);
+    width: 150px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid black;
+    position: absolute;
+    left: 80%;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: visbility ease 0.3s;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 10%;
+    }
+
+    img {
+        width: 30px;
+
+
+    }
+
+    button {
+        color: white;
+        border: none;
+        width: 100px;
+        background-color: rgb(26, 26, 26);
+        cursor: pointer;
+    }
+
+}
+
+.icon {
+    width: 30px;
+}
